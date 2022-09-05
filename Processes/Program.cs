@@ -30,7 +30,7 @@ namespace Processes
             // */
             //current.PriorityClass = ProcessPriorityClass.High;
 
-            ////////////////////// Process Info
+            //////////////////////// Process Info
             //Console.WriteLine("----------- Current proccess info ------------");
             //Console.WriteLine("Priority class: " + current.PriorityClass);
             //Console.WriteLine("Name: " + current.ProcessName);
@@ -73,16 +73,17 @@ namespace Processes
             {
                 FileName = @"notepad",
                 Arguments = $@"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\777.txt",
-                WindowStyle = ProcessWindowStyle.Minimized,
+                WindowStyle = ProcessWindowStyle.Maximized,
             };
             Process pr = Process.Start(info);
-
+            
             Console.WriteLine("Press key to do operation...");
             Console.ReadKey();
+
             //////////////////// Process Methods
             //pr.Close();               // clear resources
             //pr.Refresh();             // clear cashe
-            //pr.CloseMainWindow();       // close process by normal mode = Alt+F4
+            //pr.CloseMainWindow();     // close process by normal mode = Alt+F4
             //pr.Kill();                // imediatelly stops a process = End Task
             Console.WriteLine("Operation has done!");
 

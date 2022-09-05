@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.779
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Processes", "Processes\Processes.csproj", "{FBA2BC38-A919-4865-831C-893ABE3B15AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetArguments", "GetArguments\GetArguments.csproj", "{FCC58B9C-F2CE-4AA2-8CB6-E9FEB260CA8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{166DF624-5D69-457A-9C9D-DE81AD3AC95B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager_dynamic", "WpfApp1\TaskManager_dynamic.csproj", "{166DF624-5D69-457A-9C9D-DE81AD3AC95B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessMonitor", "ProcessMonitor\ProcessMonitor.csproj", "{31294A5E-1F17-40AA-98E8-73B6B731C26A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager_simple", "TaskManager_simple\TaskManager_simple.csproj", "{F91E9791-C8F3-400B-AA2B-88B70A684957}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{31294A5E-1F17-40AA-98E8-73B6B731C26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31294A5E-1F17-40AA-98E8-73B6B731C26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31294A5E-1F17-40AA-98E8-73B6B731C26A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F91E9791-C8F3-400B-AA2B-88B70A684957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F91E9791-C8F3-400B-AA2B-88B70A684957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F91E9791-C8F3-400B-AA2B-88B70A684957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F91E9791-C8F3-400B-AA2B-88B70A684957}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
