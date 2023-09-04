@@ -44,31 +44,31 @@ namespace Processes
             #endregion
 
             #region All Processes
-            Process[] processes = Process.GetProcesses();
+            //Process[] processes = Process.GetProcesses();
 
-            Console.WriteLine("Process Name\t\t\tPID\t\t\tPriority\tMachine name");
-            Console.WriteLine("___________________________________________");
-            foreach (var p in processes)
-            {
-                try
-                {
-                    Console.WriteLine($"{p.ProcessName}\t{p.Id}\t{p.PriorityClass}\t{p.StartTime}");
-                }
-                catch (Exception ex)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine($"Error with {p.ProcessName}");
-                    Console.ResetColor();
-                }
-            }
-            NextExample();
+            //Console.WriteLine("Process Name\t\t\tPID\t\t\tPriority\tMachine name");
+            //Console.WriteLine("___________________________________________");
+            //foreach (var p in processes)
+            //{
+            //    try
+            //    {
+            //        Console.WriteLine($"{p.ProcessName}\t{p.Id}\t{p.PriorityClass}\t{p.StartTime}");
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Console.ForegroundColor = ConsoleColor.Red;
+            //        Console.WriteLine($"Error with {p.ProcessName}");
+            //        Console.ResetColor();
+            //    }
+            //}
+            //NextExample();
             #endregion
 
             #region Start Process
 
-            //Process.Start(@"file_path");
-            Process.Start("MicrosoftEdge.exe", "stackoverflow.com google.com");
-            NextExample();
+            Process.Start(@"C:\Users\Vlad\Desktop");
+            //Process.Start("MicrosoftEdge.exe", "stackoverflow.com google.com");
+            //NextExample();
 
             ProcessStartInfo info = new ProcessStartInfo
             {
