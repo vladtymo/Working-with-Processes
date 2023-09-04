@@ -30,7 +30,7 @@ namespace Processes
             // */
             current.PriorityClass = ProcessPriorityClass.High;
 
-            //////////////////////// Process Info
+            ////////////////////////// Process Info
             Console.WriteLine("----------- Current proccess info ------------");
             Console.WriteLine("Priority class: " + current.PriorityClass);
             Console.WriteLine("Name: " + current.ProcessName);
@@ -85,8 +85,8 @@ namespace Processes
             //pr.Close();               // clear resources
             //pr.Refresh();             // clear cashe
             pr.CloseMainWindow();     // close process by normal mode = Alt+F4
-            //edge.Kill();                // imediatelly stops a process = End Task
-            Console.WriteLine("Operation has done!");
+            //pr.Kill();                // imediatelly stops a process = End Task
+            //Console.WriteLine("Operation has done!");
 
             Console.WriteLine("Wait for exit...");
             pr.WaitForExit(); // wait until proccess runing

@@ -10,7 +10,7 @@
         <ToolBar DockPanel.Dock="Top">
             <Button Click="Button_Click">Refresh</Button>
         </ToolBar>
-        <DataGrid Name="grid" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid Name="grid" AutoGenerateColumns="True" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Process Name" Binding="{Binding ProcessName}" />
                 <DataGridTextColumn Header="PID" Binding="{Binding Id}" />
