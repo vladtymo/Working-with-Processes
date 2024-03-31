@@ -18,29 +18,29 @@ namespace Processes
         static void Main(string[] args)
         {
             #region Working with Current Process
-            Process current = Process.GetCurrentProcess();
+            //Process current = Process.GetCurrentProcess();
 
-            // Process Priority:
-            // * Idle
-            // * BelowNormal
-            // * Normal (def)
-            // * AboveNormal
-            // * High
-            // * RealTime (only set by OS)
-            // */
-            current.PriorityClass = ProcessPriorityClass.High;
+            //// Process Priority:
+            //// * Idle
+            //// * BelowNormal
+            //// * Normal (def)
+            //// * AboveNormal
+            //// * High
+            //// * RealTime (only set by OS)
+            //// */
+            //current.PriorityClass = ProcessPriorityClass.High;
 
-            ////////////////////////// Process Info
-            Console.WriteLine("----------- Current proccess info ------------");
-            Console.WriteLine("Priority class: " + current.PriorityClass);
-            Console.WriteLine("Name: " + current.ProcessName);
-            Console.WriteLine("Id: " + current.Id);
-            Console.WriteLine("MachineName: " + current.MachineName);
-            Console.WriteLine("PrivateMemorySize (KB): " + current.PrivateMemorySize64 / 1024);
-            Console.WriteLine("StartTime: " + current.StartTime);
-            Console.WriteLine("TotalProcessorTime: " + current.TotalProcessorTime);
-            Console.WriteLine("UserProcessorTime: " + current.UserProcessorTime);
-            NextExample();
+            //////////////////////////// Process Info
+            //Console.WriteLine("----------- Current proccess info ------------");
+            //Console.WriteLine("Priority class: " + current.PriorityClass);
+            //Console.WriteLine("Name: " + current.ProcessName);
+            //Console.WriteLine("Id: " + current.Id);
+            //Console.WriteLine("MachineName: " + current.MachineName);
+            //Console.WriteLine("PrivateMemorySize (KB): " + current.PrivateMemorySize64 / 1024);
+            //Console.WriteLine("StartTime: " + current.StartTime);
+            //Console.WriteLine("TotalProcessorTime: " + current.TotalProcessorTime);
+            //Console.WriteLine("UserProcessorTime: " + current.UserProcessorTime);
+            //NextExample();
             #endregion
 
             #region All Processes
@@ -65,9 +65,9 @@ namespace Processes
             #endregion
 
             #region Start Process
-
-            Process.Start(@"C:\Users\Vlad\Desktop");
+            //Process.Start(@"C:\Users\Vlad\Desktop");
             //Process.Start("MicrosoftEdge.exe", "stackoverflow.com google.com");
+            //Process.Start("calc");
             //NextExample();
 
             ProcessStartInfo info = new ProcessStartInfo
@@ -82,9 +82,9 @@ namespace Processes
             Console.ReadKey();
 
             //////////////////// Process Methods
-            //pr.Close();               // clear resources
+            //pr.Close();               // clear resources (dispose)
             //pr.Refresh();             // clear cashe
-            pr.CloseMainWindow();     // close process by normal mode = Alt+F4
+            //pr.CloseMainWindow();     // close process by normal mode = Alt+F4
             //pr.Kill();                // imediatelly stops a process = End Task
             //Console.WriteLine("Operation has done!");
 
